@@ -1,3 +1,8 @@
+
+//10.dakikadayım yarım kaldı çünkü arrow öğrenemye gitdiyorum. 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,14 +18,16 @@
     console.log("start");
     const login=(username,password,callback)=>  {
         setTimeout(()=> { 
-             callback( { username:username } )
+             callback( { username:username ,email:"hatice@gmail.com" } )
          } ,1000);
         
     }
     login("haticesurumlu","123",user=> {
 
   
-    console.log(user);
+    console.log(user.username);
+
+    getPostByUserNme(username,callback)
 });
     console.log("end");
 
