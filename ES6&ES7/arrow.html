@@ -104,10 +104,21 @@ const bolbakiyim=(a,b)=>a/b;
 var sonuc3=bolbakiyim(30,3);
 console.log(sonuc3);
 
-//birden fazla durum varsa
+//birden fazla durum  { ve return kullanmayı unutma. şuan undefimned olcak
 const benherzamansanaasiktim=(a,b)=>{
     const c=a+b;
   c*c;
+}
+
+var sonuc4=benherzamansanaasiktim(3,3);
+console.log(sonuc4);
+
+
+
+//birden fazla durum  { ve return kullanmayı unutma. şimdi çalışcak
+    const benherzamansanaasiktim=(a,b)=>{
+    const c=a+b;
+  return c*c;
 }
 
 var sonuc4=benherzamansanaasiktim(3,3);
