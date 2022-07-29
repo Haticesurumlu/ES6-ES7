@@ -69,12 +69,15 @@ const urunler1=[
 ]
 const sonuc5=urunler1.find(urun=>urun.fiyat>460);
 const cvp=urunler1.filter(urun=>urun.fiyat>460);
+const sonuc6=urunler1.findIndex(urun=>urun.fiyat>460);
 console.log("filter ile find farkı , find buldugu ilk degeri getirir.")
 console.log(sonuc5);
 console.log(cvp);
+console.log(sonuc6);
 
 
 //MAP ile FILTER farkı:
+console.log("MApli örnek")
 const madde=[
     {maddeAdi:"ofkeKontrolu",sure:30},
     {maddeAdi:"zamanYonetimi",sure:40},
