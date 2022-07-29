@@ -61,10 +61,10 @@ const urunler=[
 const abc=urunler.map(urun=>urun.urunAdi);
 console.log(abc);
 
-//baska baska
+//MAP ile FILTER farkı:
 const madde=[
-    {maddeAdi:"ofkeKontrolü",sure:30},
-    {maddeAdi"zamanYonetimi",sure:40},
+    {maddeAdi:"ofkeKontrolu",sure:30},
+    {maddeAdi:"zamanYonetimi",sure:40},
     {maddeAdi:"sukurBilinci",sure:50},
     {maddeAdi:"paraYonetimi",sure:60},
     {maddeAdi:"icHuzur",sure:66}
@@ -72,6 +72,37 @@ const madde=[
 
 
 const output=madde.map(input=>input.sure);
+console.log(output)
+
+
+const madde1=[
+    {maddeAdi:"ofkeKontrolu",sure:30},
+    {maddeAdi:"zamanYonetimi",sure:40},
+    {maddeAdi:"sukurBilinci",sure:50},
+    {maddeAdi:"paraYonetimi",sure:60},
+    {maddeAdi:"icHuzur",sure:66}
+]
+
+
+const output2=madde1.filter(input=>input.sure<50);
+console.log(output2);
+
+
+
+//devam
+
+const madde2=[
+    {maddeAdi:"ofkeKontrolu",sure:30},
+    {maddeAdi:"zamanYonetimi",sure:40},
+    {maddeAdi:"sukurBilinci",sure:50},
+    {maddeAdi:"paraYonetimi",sure:60},
+    {maddeAdi:"icHuzur",sure:66}
+]
+
+
+const output3=madde2.filter(input=>input.sure<50);
+snc=output3.map(urun=>urun.maddeAdi);
+console.log(output3);
     </script>
 </body>
 </html>
