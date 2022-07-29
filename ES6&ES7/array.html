@@ -60,6 +60,19 @@ const urunler=[
 ]
 const abc=urunler.map(urun=>urun.urunAdi);
 console.log(abc);
+//Fınd ile filter farkı
+const urunler1=[
+    {urunAdi:"kitap",fiyat:12000},
+    {urunAdi:"ekmek",fiyat:33},
+    {urunAdi:"daktilo",fiyat:459},
+    {urunAdi:"monitör",fiyat:5654}
+]
+const sonuc5=urunler1.find(urun=>urun.fiyat>460);
+const cvp=urunler1.filter(urun=>urun.fiyat>460);
+console.log("filter ile find farkı , find buldugu ilk degeri getirir.")
+console.log(sonuc5);
+console.log(cvp);
+
 
 //MAP ile FILTER farkı:
 const madde=[
@@ -103,6 +116,27 @@ const madde2=[
 const output3=madde2.filter(input=>input.sure<50);
 snc=output3.map(urun=>urun.maddeAdi);
 console.log(snc);
+
+
+//daha kisasi
+
+const madde3=[
+    {maddeAdi:"ofkeKontrolu",sure:30},
+    {maddeAdi:"zamanYonetimi",sure:40},
+    {maddeAdi:"sukurBilinci",sure:50},
+    {maddeAdi:"paraYonetimi",sure:60},
+    {maddeAdi:"icHuzur",sure:66}
+]
+
+
+const output4=madde3.filter(input=>input.sure<50).map(urun=>urun.maddeAdi);
+console.log(output4);
+
+
+//ornek yap
+
+
+
     </script>
 </body>
 </html>
