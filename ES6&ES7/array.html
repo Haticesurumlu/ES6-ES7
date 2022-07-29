@@ -26,7 +26,9 @@ for(let sayi of sayilar){
 
 //3.Yol
 const sayilar=[1,5,7,2,67];
-
+const tekSayiKontrol=sayi=>sayi%2==1;
+const tekSayilar=sayilar.filter(tekSayiKontrol);
+console.log(tekSayilar);
 
 
 
