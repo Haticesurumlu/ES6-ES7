@@ -26,6 +26,7 @@
                 const data = JSON.parse(this.responseText);
                 console.log(data);            
                 setCountry(data[0]);
+                const countries= data[0].borders.toString();
 
             const req= new Request();
             req.open('GET','https://restcountries.com/v3.1/alpha?codes=' +countries)
