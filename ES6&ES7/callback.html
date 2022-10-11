@@ -14,21 +14,41 @@
     
 <script>
 
-    console.log("start");
-    const login=(username,password,callback)=>  {
-        setTimeout(()=> { 
-             callback( { username:username ,email:"hatice@gmail.com" } )
-         } ,2000);
-        
+/*1- console.log("start");
+const login= (username,password) => {
+    setTimeout(()=> {
+    return { username:username }
+},1000);
+}
+
+const username= login("hatice","123456");
+console.log(username);
+console.log("end"); //Bu şekilde sadece start ve end basıldı console kısmına . username alınmadı*/
+
+console.log("start");
+const login= (username,password,callback) => {
+    setTimeout(()=> {
+    callback( { username:username , email:"ha@gmail.com"})
+},1000);
+}
+
+const getPosts=(username,callback)=>{
+    setTimeout(()=>{
+        callback(["post1","post2","post3"]);
+    },2000)
     }
-    login("haticesurumlu","123",user=> {
 
-  
-    console.log(user.username);
+ login("hatice","123456",Hatice=> {
+    console.log(Hatice);
 
-    getPostByUserNme(username,callback)
-});
-    console.log("end");
+    getPosts(Hatice.username, (posts) => {
+        console.log(posts);
+    })
+}
+);
+
+console.log("end"); 
+
 
 </script>
 
